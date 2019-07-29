@@ -1,0 +1,339 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*My Code*/
+* {
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+}
+
+body {
+    background: #000;
+}
+
+/*Heading*/
+.heading {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.player1-mode {
+    text-align: center;
+}
+
+.player2-mode {
+    text-align: center;
+}
+
+.player1-mode span {
+    color: #fff;
+    font-weight: 900;
+}
+
+.player2-mode span {
+    color: #fff;
+    font-weight: 900;
+}
+img {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.heading h1 {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*Game-Board*/
+.game-container {
+    border: 2px solid #fff;
+    margin: 15px;
+    margin-top: 25px;
+    padding: 30px;
+}
+
+.game-container table {
+    margin: 0 auto;
+    height: 80%;
+    width: 90%;
+}
+
+td {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 70px;
+    height: 100px;
+    width: 100px;
+    font-weight: 900;
+    color: #fff;
+    border-color: #fff;
+    border-width: 5px;
+}
+
+.ugAnimate {
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-name: appear;
+}
+
+.blink {
+    animation-duration: 0.4s;
+    animation-iteration-count: 2;
+    animation-name: ugblink;
+}
+
+@keyframes ugblink {
+    from {font-size: 0px;}
+  to {font-size: 70px;}
+}
+
+@keyframes appear {
+    from {font-size: 100px;}
+  to {font-size: 70px;}
+}
+
+.top {
+    border-bottom-style: solid;
+}
+
+.top.left {
+    border-right-style: solid;
+}
+
+.top.right {
+    border-left-style: solid;
+}
+
+.left {
+    border-right-style: solid;
+}
+
+.right {
+    border-left-style: solid;
+}
+
+.bottom {
+    border-top-style: solid;
+}
+
+.bottom.left {
+    border-right-style: solid;
+}
+
+.bottom.right {
+    border-left-style: solid;
+}
+
+@media screen and (min-width: 500px){
+    .game-container table {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .game-container table {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    td {
+        font-size: 40px;
+    }
+
+    @keyframes appear {
+        from {font-size: 70px;}
+      to {font-size: 40px;}
+    }
+
+    @keyframes ugblink {
+        from {font-size: 0px;}
+      to {font-size: 40px;}
+    }
+}
+
+/*Score-Board*/
+.score-board {
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.score-board .score {
+    color: #fff;
+	display: inline;
+	font-size: 25px;
+}
+
+.score-board .left {
+	float: left;
+}
+
+.score-board .right {
+	float: right;
+} 
+
+#player_1_name {
+    border-bottom-color: #fff;
+    border-bottom-width: 2px; 
+}
+
+#player_2_name {
+    border-bottom-color: #fff;
+    border-bottom-width: 2px; 
+}
+
+.resetButton {
+    text-align: center;
+    padding: 20px; 
+}
+
+.resetButton #btn {
+	cursor: pointer;
+	border: none;
+	background: #fff;
+	color: #111;
+	border-radius: 20px;
+	text-align: center;
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+}
+
+.resetButton #btn:active {
+	height: 45px;
+	width: 140px;
+	font-size: 18px;
+}
+
+@media screen and (min-width: 500px){
+    .score-board {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .score-board .score {
+        font-size: 20px;
+    }
+
+    .game-container {
+        padding: 10px;
+    }
+
+    td {
+        height: 70px;
+        width: 40px;
+    }
+
+    @keyframes appear {
+        from {font-size: 10px;}
+      to {font-size: 40px;}
+    }
+}
+
+@media screen and (min-width: 800px){
+    .score-board {
+        width: 400px;
+    }
+}
+
+.animate-input {
+    opacity: 0;
+}

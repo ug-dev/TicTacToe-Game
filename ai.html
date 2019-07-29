@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Tic-Tac-Toe - Play Tic-Tac-Toe With Your Friends</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+    <div class="player2-mode">
+        <a href="index.html"><img src="image/two.png"></a>
+        <span>2P</span>
+    </div>
+
+    <div class="game-container">
+        <table>
+            <tr>
+                <td class="top left" id="one" onclick="addImg(this.id)"></td>
+                <td class="top" id="two" onclick="addImg(this.id)"></td>
+                <td class="top right" id="three" onclick="addImg(this.id)"></td>
+            </tr>
+            <tr>
+                <td class="left" id="four" onclick="addImg(this.id)"></td>
+                <td class="middle" id="five" onclick="addImg(this.id)"></td>
+                <td class="right" id="six" onclick="addImg(this.id)"></div></td>
+            </tr>
+            <tr>
+                <td class="bottom left" id="seven" onclick="addImg(this.id)"></td>
+                <td class="bottom" id="eight" onclick="addImg(this.id)"></td>
+                <td class="bottom right" id="nine" onclick="addImg(this.id)"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="score-board">
+        <div class="left">
+			<p class="score" id="player_1_name">Player1(X):</p>
+			<p class="score" id="player_1">0</p>
+		</div>
+		<div class="right">
+			<p class="score" id="player_2_name">Player2(O):</p>
+			<p class="score" id="player_2">0</p>
+        </div>
+    </div>
+
+    <div class="resetButton">
+        <button id="btn" onclick="resetGame()">Reset Game</button>
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
